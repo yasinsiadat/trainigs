@@ -37,7 +37,7 @@ python3 manage.py runserver
 ### Flask
 ```bash
 
-export FLASK_RUN_PORT=8000
+export FLASK_RUN_PORT=8001
 flask run
 ```
  If it doesn't work, run: pip install Flask
@@ -45,13 +45,13 @@ flask run
 ### FastAPI
 ```bash
 
-uvicorn main:app --reload --port 8000
+uvicorn main:app --reload --port 8002
 ```
 
 ### Django
 ```bash
 cd myproject
-python3 manage.py runserver 8000
+python3 manage.py runserver 8003
 ```
 
 ### Testing
