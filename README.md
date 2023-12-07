@@ -1,38 +1,50 @@
-# intership
-For the intership project 
-this project for create the same export from three differnet frameworks are Django and Flask and Fastapi 
-at first you should install them using this commands :
+# Internship Project
 
-Django: pip install Django
-Flask: pip install Flask
-FastAPI: pip install fastapi uvicorn
+This project is aimed at creating the same export using three different frameworks: Django, Flask, and FastAPI.
 
-and for run ] one of the framework you can use special commands :
-Flask:
-1-python3 app.py
+## Installation
 
-FastAPI:
-1-uvicorn main:app --reload
+To set up the project, install the required frameworks using the following commands:
 
-Django:
-1-cd myproject
-2-python3 manage.py runserver
+- Django: `pip install Django`
+- Flask: `pip install Flask`
+- FastAPI: `pip install fastapi uvicorn`
 
-and if you want to run on specific port run this commands :
+## Running the Frameworks
 
-Flask:
-1-export FLASK_RUN_PORT=8000
-2-flask run
-(if its not worked run this "pip install Flask")
+After installation, you can run each framework using the following commands:
 
-FastAPI:
-1-uvicorn main:app --reload --port 8000
+### Flask
 
-Django:
-1-cd myproject
-2-python3 manage.py runserver 8000
+```bash
+python3 app.py
 
-tester.py is check the all of the frame works have a same export and them run on 8001,8002,8003 ports
-for run tester.py :
-python3 tester.py
+###  FastAPI Flask
+```bash
+uvicorn main:app --reload
 
+###Django
+```bash
+cd myproject
+python3 manage.py runserver
+
+###Running on Specific Ports
+If you want to run on a specific port, use the following commands:
+
+Flask
+```bash
+
+export FLASK_RUN_PORT=8000
+flask run
+# If it doesn't work, run: pip install Flask
+
+###FastAPI
+```bash
+
+uvicorn main:app --reload --port 8000
+
+###Django
+```bash
+
+cd myproject
+python3 manage.py runserver 8000
