@@ -32,7 +32,7 @@ python3 manage.py runserver
 ```
 
 ###Running on Specific Ports
-If you want to run on a specific port, use the following commands:
+##If you want to run on a specific port, use the following commands:
 
 Flask
 ```bash
@@ -40,7 +40,7 @@ Flask
 export FLASK_RUN_PORT=8000
 flask run
 ```
-# If it doesn't work, run: pip install Flask
+ If it doesn't work, run: pip install Flask
 
 ###FastAPI
 ```bash
