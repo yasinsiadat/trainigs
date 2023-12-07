@@ -17,7 +17,8 @@ After installation, you can run each framework using the following commands:
 ### Flask
 
 ```bash
-python3 app.py```
+python3 app.py
+```
 
 ###  FastAPI Flask
 ```bash
