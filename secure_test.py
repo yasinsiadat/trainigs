@@ -6,8 +6,8 @@ def detect_framework(port):
     try:
         response = requests.get(url)
         headers = response.headers
+        print("Response Headers:", headers)
 
-        # Check for specific headers that indicate the framework
         if 'uvicorn' in headers.get('server', '').lower():
             return "FastAPI"
         elif 'werkzeug' in headers.get('server', '').lower():
