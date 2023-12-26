@@ -60,4 +60,22 @@ The tester.py script checks if all frameworks produce the same export. It runs o
 ```bash
 python3 tester.py
 ```
+## If you want to run hidden header on a specific port, use the following commands:
+
+for Flask install Gunicorn
+```bash
+pip install gunicorn
+```
+and config or create the 'gunicorn_config.py'
+```bash
+def post_request(worker, req, environ, resp):
+    resp.headers.pop('Server', None)
+```
+ Run the Flask App with Gunicorn
+ ```bash
+ gunicorn -w 4 -b 127.0.0.1:8001 --config gunicorn_config.py app:app
+```
+
+
+
 This revised README provides a clearer structure, improved formatting,
