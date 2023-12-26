@@ -75,7 +75,13 @@ def post_request(worker, req, environ, resp):
  ```bash
  gunicorn -w 4 -b 127.0.0.1:8001 --config gunicorn_config.py app:app
 ```
-
+and for run Django with Gunicorn
+```bash
+cd myproject
+```
+```bash
+gunicorn myproject.wsgi:application --bind 0.0.0.0:8003
+```
 
 
 This revised README provides a clearer structure, improved formatting,
