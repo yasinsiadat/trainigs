@@ -75,6 +75,10 @@ def post_request(worker, req, environ, resp):
  ```bash
  gunicorn -w 4 -b 127.0.0.1:8001 --config gunicorn_config.py app:app
 ```
+Run the Fast Api without server header
+ ```bash
+ uvicorn main:app --reload --port 8002 --no-server-header
+```
 and for run Django with Gunicorn
 ```bash
 cd myproject
